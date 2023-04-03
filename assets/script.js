@@ -91,29 +91,6 @@ function getWeatherToday() {
 		var cityLat = response.coord.lat;
 		// console.log(cityLat);
 
-		var getUrlUvi = `https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=hourly,daily,minutely&appid=${key}`;
-
-		$.ajax({
-			url: getUrlUvi,
-			method: 'GET',
-		}).then(function (response) {
-			var pElUvi = $('<p>').text(`UV Index: `);
-			var uviSpan = $('<span>').text(response.current.uvi);
-			var uvi = response.current.uvi;
-			pElUvi.append(uviSpan);
-			cardTodayBody.append(pElUvi);
-			if (uvi >= 0 && uvi <= 2) {
-				uviSpan.attr('class', 'green');
-			} else if (uvi > 2 && uvi <= 5) {
-				uviSpan.attr("class", "yellow")
-			} else if (uvi > 5 && uvi <= 7) {
-				uviSpan.attr("class", "orange")
-			} else if (uvi > 7 && uvi <= 10) {
-				uviSpan.attr("class", "red")
-			} else {
-				uviSpan.attr("class", "purple")
-			}
-		});
 	});
 	getFiveDayForecast();
 };
@@ -181,7 +158,7 @@ function getFiveDayForecast() {
 	});
 };
 
-// shows "Cleveland..." 
+// shows example "Cleveland..." in search bar 
 function initLoad() {
 
 	var cityHistStore = JSON.parse(localStorage.getItem('city'));

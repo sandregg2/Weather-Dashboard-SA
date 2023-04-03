@@ -12,17 +12,20 @@
     />
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="./assets/style.css" />
-    <title>Weather Dashboard</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Worldwide Weather Dashboard</title>
   </head>
   <body>
-			<h1>Weather Dashboard</h1>
+			<h1>Worldwide Weather Dashboard</h1>
 				<div class="container-fluid mainCon">
 					<div class="row">
 						<div class="col-12 col-md-3 col-xl-3 colOne">
-							<label>Search for a City:</label>
+							<label>Search for a City/Country</label>
 
 							<div class="input-group mb-3">
-								<input type="text" class="form-control textVal" placeholder="Cleveland...">
+								<input type="text" class="form-control textVal" placeholder="Enter location here">
 								<div class="input-group-append btnPar">
 									<button class="btn btn-primary search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
 								</div>
@@ -35,7 +38,7 @@
 
 							<div class="row today">
 
-								<div class="card bg-light mb-3 " style="max-width: 400px;">
+								<div class="card bg-secondary mb-3 " style="max-width: 400px;">
 									<h2 class="card-header cardTodayCityName"></h2>
 									<h3 class="card-header cardTodayDate"></h3>
 									<img class="icons"/>

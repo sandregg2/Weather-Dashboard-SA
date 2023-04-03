@@ -1,7 +1,8 @@
 # Weather Dashboard | Module 6 Challenge
 - This is a README for our 6th challenge for our coding bootcamp
 ## Description of challenge
-- Our challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. Use the 5 Day Weather Forecast to retrieve weather data for cities.
+- Our challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS
+- Use the 5 Day Weather Forecast to retrieve weather data for cities
 ## My Website
 https://sandregg2.github.io/Weather-Dashboard-SA/
 ## Images

@@ -1,5 +1,5 @@
 h1 {
-	background-color: darkgrey;
+	background-color: rgb(0, 174, 255);
 	text-align: center;
 }
 label {
@@ -12,7 +12,6 @@ label {
 }
 .colOne {
 	background-color: white;
-	/* darkkhaki */
 }
 .colTwo {
 	background-color: rgb(255, 255, 255);
